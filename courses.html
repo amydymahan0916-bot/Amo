@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دوره ها</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">خدمات آموزشات ماهان امیدی</div>
+
+    <ul>
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="courses.html">دوره ها</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+    </ul>
+</nav>
+
+<h1 class="page-title">
+دوره های آموزشی
+</h1>
+
+<div class="grid">
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت روبیکا','1,000,000')">
+امنیت روبیکا
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت شاد','1,000,000')">
+امنیت شاد
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت سروش','1,500,000')">
+امنیت سروش
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت ایتا','2,000,000')">
+امنیت ایتا
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت واتساپ','1,500,000')">
+امنیت واتساپ
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت تلگرام','1,500,000')">
+امنیت تلگرام
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت اینستاگرام','1,000,000')">
+امنیت اینستاگرام
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت گالری','1,000,000')">
+امنیت گالری
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت مخاطبین','1,000,000')">
+امنیت مخاطبین
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت پیامک ها','1,000,000')">
+امنیت پیامک ها
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت دوربین','1,000,000')">
+امنیت دوربین
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت موقعیت مکانی','1,000,000')">
+امنیت موقعیت مکانی
+</button>
+
+<button class="course-btn"
+onclick="showCourse('آموزش امنیت کامل گوشی','5,000,000')">
+امنیت کامل گوشی
+</button>
+
+</div>
+
+<div id="result"></div>
+
+<script>
+
+function showCourse(title,price){
+
+document.getElementById("result").innerHTML = `
+
+<div class="result-box">
+
+<h2>${title}</h2>
+
+<p>
+قیمت دوره:
+${price}
+تومان
+</p>
+
+<a href="payment.html"
+class="pay-btn">
+پرداخت
+</a>
+
+</div>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>

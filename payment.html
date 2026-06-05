@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پرداخت</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">خدمات آموزشات ماهان امیدی</div>
+
+    <ul>
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="courses.html">دوره ها</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+    </ul>
+</nav>
+
+<div class="payment-container">
+
+    <h1>پرداخت دوره</h1>
+
+    <div class="card-box">
+
+        <h3>شماره کارت</h3>
+
+        <div class="card-number" id="cardNumber">
+            6037997194784360
+        </div>
+
+        <p>
+            به نام: ماهان امیدی
+        </p>
+
+        <button class="copy-btn" onclick="copyCard()">
+            کپی شماره کارت
+        </button>
+
+        <button class="done-btn" onclick="showMessage()">
+            پرداخت کردم
+        </button>
+
+    </div>
+
+    <div id="messageBox"></div>
+
+</div>
+
+<script>
+
+function copyCard(){
+
+navigator.clipboard.writeText(
+"6037997194784360"
+);
+
+alert("شماره کارت کپی شد");
+
+}
+
+function showMessage(){
+
+document.getElementById("messageBox").innerHTML = `
+
+<div class="success-box">
+
+کاربر گرامی، اگر پرداخت شما صحت داشته باشد،
+به زودی پشتیبانی برای شما آموزش را ارسال خواهد کرد.
+
+<br><br>
+
+روبیکا:
+@Omidi__xx
+
+<br>
+
+شماره تماس:
+09379405557
+
+</div>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
