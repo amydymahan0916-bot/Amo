@@ -1,47 +1,196 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>درباره ما</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.header{
+background:#000;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+
+.container{
+max-width:1000px;
+margin:30px auto;
+padding:15px;
+}
+
+.title{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:2;
+color:#444;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.feature{
+background:#fff;
+padding:20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.icon{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.footer{
+margin-top:40px;
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:700px){
+
+.features{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<nav>
-    <div class="logo">خدمات آموزشات ماهان امیدی</div>
+<div class="header">
 
-    <ul>
-        <li><a href="index.html">خانه</a></li>
-        <li><a href="courses.html">دوره ها</a></li>
-        <li><a href="about.html">درباره ما</a></li>
-        <li><a href="contact.html">تماس با ما</a></li>
-    </ul>
-</nav>
+<h1>
+خدمات آموزشات ماهان امیدی
+</h1>
 
-<div class="about-page">
+</div>
 
-    <h1>درباره ما</h1>
+<div class="container">
 
-    <div class="about-box">
+<div class="title">
+درباره ما
+</div>
 
-        <p>
-        خدمات آموزشات ماهان امیدی با هدف آموزش
-        امنیت سایبری، حفظ حریم خصوصی،
-        افزایش امنیت حساب‌های کاربری و
-        برنامه نویسی فعالیت می‌کند.
-        </p>
+<div class="card">
 
-        <br>
+<h2>
+معرفی
+</h2>
 
-        <p>
-        تمامی آموزش‌ها صرفاً برای اهداف آموزشی،
-        دفاعی و استفاده قانونی ارائه می‌شوند.
-        </p>
+<p>
+این وب‌سایت با هدف ارائه آموزش‌های مرتبط با امنیت سایبری،
+حفظ حریم خصوصی، آشنایی با فناوری و برنامه‌نویسی ایجاد شده است.
+هدف ما ارائه محتوای آموزشی کاربردی و قابل فهم برای علاقه‌مندان است.
+</p>
 
-    </div>
+</div>
 
+<div class="features">
+
+<div class="feature">
+
+<div class="icon">🎓</div>
+
+<h3>
+آموزش
+</h3>
+
+<p>
+محتوای آموزشی متنوع
+</p>
+
+</div>
+
+<div class="feature">
+
+<div class="icon">💬</div>
+
+<h3>
+پشتیبانی
+</h3>
+
+<p>
+ارتباط مستقیم با پشتیبانی
+</p>
+
+</div>
+
+<div class="feature">
+
+<div class="icon">⚡</div>
+
+<h3>
+دسترسی سریع
+</h3>
+
+<p>
+ثبت سفارش و دریافت آموزش
+</p>
+
+</div>
+
+</div>
+
+<div class="card" style="margin-top:20px;">
+
+<h2>
+قوانین
+</h2>
+
+<p>
+تمامی آموزش‌ها صرفاً برای یادگیری، افزایش آگاهی و استفاده قانونی ارائه می‌شوند.
+کاربران مسئول رعایت قوانین و مقررات مرتبط با استفاده از مطالب آموزشی هستند.
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+© خدمات آموزشات ماهان امیدی
 </div>
 
 </body>
